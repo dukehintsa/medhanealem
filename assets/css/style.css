@@ -1,4 +1,5 @@
 :root {
+  color-scheme: only light;
   --green: #1f3d2b;
   --green-dark: #142a1d;
   --gold: #b8892f;
@@ -263,3 +264,11 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
 }
 .other-ways .mono { font-family: ui-monospace, Consolas, monospace; }
 .other-ways li { flex-wrap: wrap; }
+
+/* ---------- Small phones: keep header compact ---------- */
+@media (max-width: 480px) {
+  .brand small { display: none; }
+  .brand strong { font-size: .8rem; line-height: 1.25; }
+  .brand img { height: 38px; }
+  .nav-wrap { padding: .5rem 0; }
+}
