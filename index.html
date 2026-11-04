@@ -27,6 +27,7 @@
           <small class="ethiopic">ደብረ ምሕረት መድኃኔዓለም</small>
         </span>
       </a>
+      <a href="#donate" class="btn btn-gold btn-sm mobile-donate">Donate</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -36,7 +37,7 @@
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#visit">Visit</a>
-        <a href="https://gofund.me/287dd9adf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Donate</a>
+        <a href="#donate" class="btn btn-gold btn-sm">Donate</a>
       </nav>
     </div>
   </header>
@@ -69,7 +70,7 @@
   <section class="banner">
     <div class="container banner-inner">
       <p><strong>Together in Faith, We Build His House.</strong> <span class="ethiopic">የእግዚአብሔርን ቤት ለመሥራት የበረከት ተካፋይ ይሁኑ።</span></p>
-      <a href="https://gofund.me/287dd9adf" target="_blank" rel="noopener" class="btn btn-light btn-sm">Give on GoFundMe →</a>
+      <a href="#donate" class="btn btn-light btn-sm">Ways to Give →</a>
     </div>
   </section>
 
@@ -141,9 +142,14 @@
           </blockquote>
         </div>
 
-        <aside class="donate-card">
-          <h3>Donate Online</h3>
-          <p>Give securely through our official GoFundMe campaign.</p>
+        <aside class="donate-card" id="donate">
+          <h3>Ways to Give</h3>
+          <p>Choose whichever is easiest for you:</p>
+          <div class="give-options">
+            <a href="https://gofund.me/287dd9adf" target="_blank" rel="noopener" class="give-opt gfm">GoFundMe<small>Card / online</small></a>
+            <a href="#zelle" class="give-opt zelle">Zelle<small>On request</small></a>
+            <a href="#bank" class="give-opt bank">Bank<small>Direct transfer</small></a>
+          </div>
 
           <!-- Official GoFundMe embed widget (shows live progress) -->
           <div class="gfm-wrap">
@@ -158,10 +164,27 @@
           <div class="other-ways">
             <h4>Other Ways to Give</h4>
             <ul>
-              <li><span class="pill zelle">Zelle</span> Details available on request</li>
-              <li><span class="pill bank">Bank</span> Bank transfer, details available on request</li>
+              <li id="zelle"><span class="pill zelle">Zelle</span> Details available on request</li>
+              <li><span class="pill bank">Bank</span> Direct bank transfer (details below)</li>
               <li><span class="pill">In person</span> At the church during services</li>
             </ul>
+
+            <div class="bank-details" id="bank">
+              <h5>Bank Transfer</h5>
+              <dl>
+                <dt>Beneficiary</dt>
+                <dd>Debre Mehret Medhane Alem Ethiopian Orthodox Tewahedo Church</dd>
+                <dt>Bank</dt>
+                <dd>Wells Fargo Bank, N.A.</dd>
+                <dt>Account No.</dt>
+                <dd><span class="mono">2000057775962</span> <button type="button" class="copy-btn" data-copy="2000057775962">Copy</button></dd>
+                <dt>Routing No.</dt>
+                <dd><span class="mono">053000279</span> <button type="button" class="copy-btn" data-copy="053000279">Copy</button></dd>
+                <dt>SWIFT/BIC</dt>
+                <dd><span class="mono">WFBIUS6S</span> <button type="button" class="copy-btn" data-copy="WFBIUS6S">Copy</button></dd>
+              </dl>
+              <p class="bank-note">Please write <em>"Building Fund"</em> in the transfer memo. Use SWIFT/BIC for international transfers.</p>
+            </div>
           </div>
         </aside>
       </div>
@@ -273,8 +296,8 @@
       </div>
       <div>
         <h4>Give</h4>
-        <p><a href="https://gofund.me/287dd9adf" target="_blank" rel="noopener">Building Fund on GoFundMe</a></p>
-        <p>Zelle &amp; bank details on request</p>
+        <p><a href="#donate">All ways to give</a> · <a href="https://gofund.me/287dd9adf" target="_blank" rel="noopener">GoFundMe</a></p>
+        <p><a href="#bank">Bank transfer details</a> · Zelle on request</p>
       </div>
     </div>
     <p class="copyright">Thank you for standing with us in faith and generosity. &copy; <span id="year"></span> Debre Mehret Medhane Alem EOTC</p>

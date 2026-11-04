@@ -13,7 +13,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
 body {
   font-family: "EB Garamond", Georgia, serif;
   font-size: 1.15rem;
@@ -211,4 +211,53 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
   .brand strong { font-size: .9rem; }
   .goal-box { grid-template-columns: 1fr; gap: .8rem; }
   .banner-inner { justify-content: center; text-align: center; }
+}
+
+/* ---------- Bank details ---------- */
+.bank-details { margin-top: 1rem; background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 10px; padding: 1rem 1.1rem; }
+.bank-details h5 { font-family: "Cinzel", serif; color: var(--green); font-size: .95rem; margin-bottom: .6rem; }
+.bank-details dl { display: grid; grid-template-columns: auto 1fr; gap: .35rem .9rem; font-size: .98rem; }
+.bank-details dt { color: var(--muted); font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; padding-top: .15rem; }
+.bank-details dd { color: var(--ink); font-weight: 600; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.bank-details .mono { font-family: ui-monospace, Consolas, monospace; letter-spacing: .03em; }
+.copy-btn { font-size: .72rem; padding: .1rem .5rem; border-radius: 6px; border: 1px solid var(--gold); background: #fff; color: var(--gold); cursor: pointer; font-family: inherit; }
+.copy-btn:hover { background: var(--gold); color: #fff; }
+.bank-note { font-size: .9rem; color: var(--muted); margin-top: .7rem; }
+
+/* ---------- Mobile: always-visible Donate button & tighter hero ---------- */
+.mobile-donate { display: none; }
+@media (max-width: 820px) {
+  .mobile-donate { display: inline-block; margin-left: auto; margin-right: .6rem; white-space: nowrap; }
+  .main-nav .btn { display: none; }
+  .hero { min-height: auto; }
+  .hero-content { padding: 3rem 0 3.5rem; }
+}
+@media (max-width: 560px) {
+  .brand img { height: 42px; }
+  .brand strong { font-size: .82rem; }
+  .brand small { font-size: .75rem; }
+  .brand { gap: .5rem; min-width: 0; }
+  .mobile-donate { padding: .4rem .85rem; font-size: .78rem; margin-right: .3rem; }
+  .hero-amharic { font-size: 1rem; }
+  .subtitle { font-size: 1.05rem; }
+  .hero blockquote { margin: 1.3rem auto; font-size: 1rem; }
+  .hero-actions .btn { width: 100%; }
+}
+
+/* ---------- Quick give options ---------- */
+.give-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin-bottom: 1.2rem; }
+.give-opt {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: .75rem .4rem; border-radius: 10px; text-decoration: none; color: #fff;
+  font-family: "Cinzel", serif; font-weight: 700; font-size: .95rem; transition: transform .15s, filter .15s;
+}
+.give-opt small { font-family: "EB Garamond", serif; font-weight: 400; font-size: .8rem; opacity: .9; margin-top: .1rem; }
+.give-opt:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.give-opt.gfm { background: #02a95c; }
+.give-opt.zelle { background: #6d1ed4; }
+.give-opt.bank { background: var(--green); }
+#zelle:target, #bank:target { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 8px; }
+@media (max-width: 820px) {
+  .give-options { margin-bottom: 1rem; }
+  .gfm-wrap { max-height: 420px; overflow: hidden; }
 }

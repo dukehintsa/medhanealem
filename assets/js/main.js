@@ -55,3 +55,14 @@ document.querySelector('.share-btn').addEventListener('click', async e => {
     setTimeout(() => (btn.textContent = old), 2000);
   }
 });
+
+// Copy bank detail buttons
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(btn.dataset.copy);
+      btn.textContent = 'Copied!';
+      setTimeout(() => (btn.textContent = 'Copy'), 1500);
+    } catch (_) { /* clipboard unavailable */ }
+  });
+});
