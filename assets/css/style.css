@@ -272,3 +272,9 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
   .brand img { height: 38px; }
   .nav-wrap { padding: .5rem 0; }
 }
+
+/* ---------- Service times list ---------- */
+.sched-card .times { list-style: none; margin-top: .5rem; }
+.sched-card .times li { display: flex; flex-direction: column; padding: .45rem 0; border-top: 1px dashed var(--cream-dark); font-size: 1rem; }
+.sched-card .times li:first-child { border-top: 0; }
+.sched-card .times .time { margin-top: .1rem; font-size: 1rem; }
