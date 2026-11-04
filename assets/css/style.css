@@ -261,3 +261,5 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
   .give-options { margin-bottom: 1rem; }
   .gfm-wrap { max-height: 420px; overflow: hidden; }
 }
+.other-ways .mono { font-family: ui-monospace, Consolas, monospace; }
+.other-ways li { flex-wrap: wrap; }
