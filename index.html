@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=14" />
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
 </head>
 <body>
 
@@ -245,8 +245,20 @@
           </a>
         </div>
         <div class="member-form">
-          <iframe title="Membership form powered by Zeffy" src="https://www.zeffy.com/embed/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" loading="lazy" allowpaymentrequest allowtransparency="true"></iframe>
-          <p class="form-fallback">Form not loading? <a href="https://www.zeffy.com/en-US/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" target="_blank" rel="noopener">Open the membership form on Zeffy →</a></p>
+          <div class="member-gate" id="member-gate">
+            <div class="gate-icon">✠</div>
+            <h3>Membership Registration</h3>
+            <p>Before registering, please read our <a href="assets/docs/bylaws.pdf" target="_blank" rel="noopener">Church By-Laws</a>.</p>
+            <label class="agree-check">
+              <input type="checkbox" id="agree-bylaws" />
+              <span>I have read and agree to the Debre Mehret Medhane Alem Church By-Laws.</span>
+            </label>
+            <button type="button" class="btn btn-gold btn-lg" id="agree-btn" disabled>I Agree · Continue to Registration</button>
+          </div>
+          <div class="member-form-body" id="member-form-body" hidden>
+            <iframe title="Membership form powered by Zeffy" data-src="https://www.zeffy.com/embed/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" allowpaymentrequest allowtransparency="true"></iframe>
+            <p class="form-fallback">Form not loading? <a href="https://www.zeffy.com/en-US/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" target="_blank" rel="noopener">Open the membership form on Zeffy →</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -363,6 +375,6 @@
   <div class="lightbox" hidden><button class="lb-close" aria-label="Close">&times;</button><img alt="" /></div>
 
   <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-  <script src="assets/js/main.js?v=7"></script>
+  <script src="assets/js/main.js?v=8"></script>
 </body>
 </html>

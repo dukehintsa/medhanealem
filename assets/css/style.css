@@ -333,3 +333,18 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
 .fee-amt { display: block; font-family: "Cinzel", serif; font-weight: 700; font-size: 1.6rem; color: var(--green); line-height: 1.1; }
 .fee-amt small { font-size: .8rem; color: var(--muted); font-family: "EB Garamond", serif; font-weight: 400; }
 .fee-label { display: block; font-size: .9rem; color: var(--muted); margin-top: .25rem; line-height: 1.25; }
+
+/* ---------- Membership agreement gate ---------- */
+.member-gate { text-align: center; padding: 2.5rem 1.6rem; }
+.gate-icon { font-size: 2.4rem; color: var(--gold); line-height: 1; }
+.member-gate h3 { margin: .6rem 0 .5rem; font-size: 1.5rem; }
+.member-gate p { color: var(--muted); margin-bottom: 1.3rem; }
+.agree-check {
+  display: flex; gap: .8rem; align-items: flex-start; text-align: left; cursor: pointer;
+  background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 10px;
+  padding: 1rem 1.1rem; margin: 0 auto 1.3rem; max-width: 460px; font-size: 1.05rem; line-height: 1.4;
+}
+.agree-check input { width: 1.3rem; height: 1.3rem; margin-top: .1rem; accent-color: var(--green); flex-shrink: 0; cursor: pointer; }
+#agree-btn:disabled { background: #c9c2b2; cursor: not-allowed; transform: none; }
+.member-form-body[hidden] { display: none; }
+.member-gate[hidden] { display: none; }

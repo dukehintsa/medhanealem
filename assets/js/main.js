@@ -66,3 +66,19 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
     } catch (_) { /* clipboard unavailable */ }
   });
 });
+
+// Membership: unlock Zeffy form only after agreeing to the by-laws
+const agreeBox = document.getElementById('agree-bylaws');
+const agreeBtn = document.getElementById('agree-btn');
+if (agreeBox && agreeBtn) {
+  agreeBox.addEventListener('change', () => { agreeBtn.disabled = !agreeBox.checked; });
+  agreeBtn.addEventListener('click', () => {
+    if (!agreeBox.checked) return;
+    const body = document.getElementById('member-form-body');
+    const frame = body.querySelector('iframe');
+    frame.src = frame.dataset.src;
+    document.getElementById('member-gate').hidden = true;
+    body.hidden = false;
+    body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
