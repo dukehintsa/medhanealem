@@ -301,4 +301,3 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
 .brand span { min-width: 0; }
 @media (max-width: 480px) { .brand strong { font-size: .74rem; } .mobile-donate { margin-left: .4rem; } }
 .main-nav a { white-space: nowrap; }
-@media (max-width: 560px) { .hp-prefix { display: none; } .brand strong { font-size: .82rem; } }
