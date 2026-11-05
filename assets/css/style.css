@@ -301,3 +301,15 @@ h1, h2, h3, h4 { font-family: "Cinzel", Georgia, serif; color: var(--green); lin
 .brand span { min-width: 0; }
 @media (max-width: 480px) { .brand strong { font-size: .74rem; } .mobile-donate { margin-left: .4rem; } }
 .main-nav a { white-space: nowrap; }
+
+/* ---------- Phones: lift hero content so both buttons fit on first screen ---------- */
+@media (max-width: 560px) {
+  .hero-content { padding: 1.1rem 0 2rem; }
+  .cross { font-size: 1.8rem; line-height: 1; }
+  .hero-amharic { margin: .3rem auto .6rem; line-height: 1.5; }
+  .hero h1 { font-size: 2rem; }
+  .subtitle { margin-top: .2rem; line-height: 1.4; }
+  .hero blockquote { margin: .9rem auto 1.1rem; line-height: 1.45; }
+  .hero-actions { gap: .6rem; }
+  .hero-actions .btn { padding: .7rem 1.2rem; }
+}
