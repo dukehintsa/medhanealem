@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=16" />
+  <link rel="stylesheet" href="assets/css/style.css?v=17" />
 </head>
 <body>
 
@@ -262,6 +262,11 @@
           <div class="member-gate" id="member-gate">
             <div class="gate-icon">✠</div>
             <h3>Membership Registration</h3>
+            <ol class="reg-steps">
+              <li><span>1</span> Read and agree to the By-Laws</li>
+              <li><span>2</span> Enter the primary member's full name and birthday, and add family members</li>
+              <li><span>3</span> Choose your membership and complete payment</li>
+            </ol>
             <p>Before registering, please read our <a href="assets/docs/bylaws.pdf" target="_blank" rel="noopener">Church By-Laws</a>.</p>
             <label class="agree-check">
               <input type="checkbox" id="agree-bylaws" />
@@ -271,6 +276,11 @@
           </div>
           <div class="member-form-body" id="member-form-body" hidden>
             <iframe title="Membership form powered by Zeffy" data-src="https://www.zeffy.com/embed/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" allowpaymentrequest allowtransparency="true"></iframe>
+            <div class="after-pay">
+              <strong>✓ After your payment</strong>
+              You'll receive a confirmation email, and the church administrator is notified automatically.
+              Your membership will be processed within <strong>48 hours</strong>.
+            </div>
             <p class="form-fallback">Form not loading? <a href="https://www.zeffy.com/en-US/ticketing/debre-mehret-medhanealem-ethiopian-orthodox-tewahedo-churchs-memberships" target="_blank" rel="noopener">Open the membership form on Zeffy →</a></p>
           </div>
         </div>
